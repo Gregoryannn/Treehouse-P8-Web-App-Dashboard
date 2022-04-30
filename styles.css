@@ -27,7 +27,7 @@ p {
 .nav__item {
     text-align: center;
     border-bottom: 2px solid transparent;
-    padding: 0;
+    padding: 0 0 7px;
     margin: 20px 10px;
     transition-property: transform, border-bottom;
     transition-duration: 0.3s;
@@ -105,6 +105,10 @@ header nav ul li {
 
 main {
     padding: 50px 2em 0;
+}
+
+.site__description {
+    padding: 0 2em;
 }
 
 main h2 {
@@ -234,20 +238,7 @@ MEDIA QUERIES
     .svg__text {
         display: inline;
     }
-    .nav__item {
-        padding: 7px 0;
-    }
-}
-
-@media screen and (min-width: 425px) {
-    /* put the logo text back and remove the h1 */
-    .logo__text {
-        display: none;
-    }
-    .svg__text {
-        display: inline;
-    }
-    .nav__item {
-        padding: 7px 0;
+    .site__description {
+        padding: 0;
     }
 }
