@@ -40,54 +40,51 @@ p {
     transition-timing-function: ease-out;
 }
 
-.nav__item a {
+    .nav__item a {
         text-decoration: none;
         color: #39add1;
         font-weight: 700;
- }
-
-.nav__item:hover a {
-         color: #111;
- }
-
-.nav__item:hover a .nav-icon {
-        fill: currentColor;
     }
 
-.nav__item:hover {
+    .nav__item:hover {
         border-bottom: 2px solid currentColor;
+        -webkit-transform: scale(1.2);
         transform: scale(1.2);
- }
+    }
+
+        .nav__item:hover a {
+            color: #111;
+        }
+
+            .nav__item:hover a .nav-icon {
+                fill: currentColor;
+            }
 
 header {
     padding-top: 10px;
 }
 
-header nav {
-     padding-bottom: 50px;
-     text-align: left;
- }
+    header nav {
+        padding-bottom: 50px;
+        text-align: left;
+    }
 
-header nav ul li {
-     display: inline-block;
-     margin-right: 20px;
-}
+        header nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
 
 .logo {
     -webkit-perspective: 500px;
     perspective: 500px;
 }
 
-.logo__svg *
-
-{
+.logo__svg * {
     -webkit-transform-origin: 70.4px 69.9px;
     transform-origin: 70.4px 69.9px;
 }
 
-.logo__svg
-
-{
+.logo__svg {
     width: 140px;
     height: 120px;
     padding: 20px;
@@ -102,43 +99,32 @@ header nav ul li {
     transition: transform 1s ease-out, -webkit-transform 1s ease-out;
 }
 
+    .logo__svg:hover {
+        -webkit-animation: bouncy 2s linear;
+        animation: bouncy 2s linear;
+    }
 
-.logo__svg:hover
-
-{
-    -webkit-animation: bouncy 2s linear;
-    animation: bouncy 2s linear;
-}
-
-.logo__text
-
-{
+.logo__text {
     display: none;
 }
 
 .st1 {
     stroke: #eaaa7f;
-    stroke-width: 1;
-    stroke-dasharray: 1042;
-    stroke-dashoffset: 1042;
+    stroke-width: 1px;
+    stroke-dasharray: 1042px;
+    stroke-dashoffset: 1042px;
     -webkit-animation: offset 1s linear forwards, fill 1s 1s forwards, draw 0.9s forwards;
     animation: offset 1s linear forwards, fill 1s 1s forwards, draw 0.9s forwards;
-
 }
 
-.svg__paw {
-    .logo__paw
-
-{
+.logo__paw {
     -webkit-animation: stamp 1s ease-out backwards;
     animation: stamp 1s ease-out backwards;
     -webkit-animation-delay: .15s;
     animation-delay: .15s;
 }
 
-.logo__outer
-
-{
+.logo__outer {
     -webkit-animation-delay: 0.1s;
     animation-delay: 0.1s;
 }
@@ -147,9 +133,7 @@ main {
     padding: 50px 2em 0;
 }
 
-.site
-
-{
+.site {
     padding: 0 2em;
 }
 
@@ -177,13 +161,10 @@ main h2 {
     padding: 1em;
 }
 
-
-.corgidog__container:hover
-
-{
-    -webkit-animation: wag 1.4s ease-in-out;
-    animation: wag 1.4s ease-in-out;
-}
+    .corgidog__container:hover {
+        -webkit-animation: wag 1.4s ease-in-out;
+        animation: wag 1.4s ease-in-out;
+    }
 
 .corgidog__desc {
     text-align: center;
@@ -218,6 +199,7 @@ footer {
     padding-bottom: 30px;
     color: #ba8058;
 }
+
 /* ================
    KEYFRAMES
  =============== */
@@ -427,23 +409,17 @@ footer {
  =============== */
 
 @media screen and (min-width: 425px) {
- logo__h1
+    .logo__h1 {
+        display: none;
+    }
 
-{
-    display: none;
-}
+    .logo__text {
+        display: inline;
+    }
 
-
-.logo__text
-
-{
-    display: inline;
-}
-
-.site__description {
-    padding: 0;
-}
-
+    .site__description {
+        padding: 0;
+    }
 }
 
 @media screen and (min-width: 975px) {
